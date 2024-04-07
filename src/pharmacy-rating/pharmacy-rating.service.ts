@@ -7,7 +7,12 @@ import { PharmacyRating } from "./pharmacy-rating.model";
 export class PharmacyRatingService {
   constructor(
     @InjectModel(PharmacyRating)
+<<<<<<< HEAD
     private ratingRepository: typeof PharmacyRating
+=======
+    private ratingRepository: typeof PharmacyRating,
+    // private customerService: CustomersService
+>>>>>>> cb8f1a4694af39c98dd55a6a751fdf5cba516c55
   ) {}
   async createRating(dto: CreatePharmRatingDto) {
     const rating = await this.ratingRepository.findOne({
