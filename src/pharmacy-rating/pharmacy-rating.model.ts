@@ -11,7 +11,7 @@ import { Pharmacy } from "src/pharamacies/pharamacies.model";
 
 interface PharmacyRatingAttributes {
   rating: number;
-  comment: string;
+  comment: string;  
   pharmacyId: number;
   userIIN: number;
 }
